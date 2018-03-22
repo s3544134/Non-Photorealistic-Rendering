@@ -1,0 +1,6 @@
+<map id="Canvas" name="Canvas">
+<area shape="rect" id="node2" href="$classBezierPathCanvas.html" title="{BezierPathCanvas\n||+ BezierPathCanvas()\l+ ~BezierPathCanvas()\l+ paintCanvas()\l+ resetCanvas()\l+ computeFitness()\l+ computeBooleanFitness()\l+ getFitness()\l+ saveImage()\l}" alt="" coords="5,541,188,721"/>
+<area shape="rect" id="node3" href="$classDecalCanvas.html" title="{DecalCanvas\n||+ DecalCanvas()\l+ ~DecalCanvas()\l+ paintCanvas()\l+ resetCanvas()\l+ getDecal()\l+ computeStroke()\l+ computeFitness()\l+ getFitness()\l+ saveImage()\l}" alt="" coords="212,534,347,729"/>
+<area shape="rect" id="node4" href="$classShroudCanvas.html" title="{ShroudCanvas\n|+ lineColor\l# reader\l|+ ShroudCanvas()\l+ ShroudCanvas()\l+ ~ShroudCanvas()\l+ fastColourTechnique3()\l+ fastColourTechnique2()\l+ fastGrayTechnique()\l+ paintCanvas()\l+ resetCanvas()\l+ swipResetConvas()\l+ computeFitness()\land 6 more...\l}" alt="" coords="371,512,540,751"/>
+<area shape="rect" id="node5" href="$classTriangleCanvas.html" title="{TriangleCanvas\n|+ lineColor\l+ flagDraw\l+ line1\l+ line2\l+ line3\l# reader\l|+ TriangleCanvas()\l+ TriangleCanvas()\l+ ~TriangleCanvas()\l+ fastColourTechnique3()\l+ fastColourTechnique2()\l+ fastGrayTechnique()\l+ paintCanvas()\l+ resetCanvas()\l+ swipResetConvas()\l+ computeFitness()\land 9 more...\l}" alt="" coords="564,483,733,780"/>
+</map>

@@ -1,0 +1,3 @@
+<map id="ShroudCanvas" name="ShroudCanvas">
+<area shape="rect" id="node2" href="$classCanvas.html" title="{Canvas\n|# bestCanvas\l# hsvFitnessH\l# hsvFitnessS\l# hsvFitnessV\l|+ Canvas()\l+ Canvas()\l+ ~Canvas()\l+ setRGBData()\l+ getDataOffset()\l+ getRGBData()\l+ insideCanvas()\l+ rotate2D()\l+ saveImage()\l+ saveHSVImage()\land 12 more...\l# resetNumDrawNodes()\l# incrementLines()\l# setBackground()\l# setBackground_Red()\l# setBackground_Green()\l# setBackground_Blue()\l# getBGColor()\l# getbgColor_Red()\l# getbgColor_Green()\l# getbgColor_Blue()\land 22 more...\l}" alt="" coords="5,5,176,435"/>
+</map>

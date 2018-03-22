@@ -1,0 +1,4 @@
+<map id="Terminal" name="Terminal">
+<area shape="rect" id="node3" href="$classRandFloat.html" title="{RandFloat\n||+ RandFloat()\l+ RandFloat()\l+ ~RandFloat()\l+ evaluate()\l+ print()\l+ copy()\l+ generate()\l}" alt="" coords="14,505,125,671"/>
+<area shape="rect" id="node2" href="$classNode.html" title="{Node\n|# maxArgs\l# config\l|+ Node()\l+ Node()\l+ ~Node()\l+ evaluate()\l+ getReturnType()\l+ getMaxArgs()\l+ setDepth()\l+ getDepth()\l+ getName()\l+ getParent()\land 8 more...\l}" alt="" coords="5,5,133,244"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="Population" name="Population">
+<area shape="rect" id="node2" href="$classCoEvolutionPopulation.html" title="{CoEvolutionPopulation\n||+ CoEvolutionPopulation()\l+ ~CoEvolutionPopulation()\l+ setOtherPopulation()\l+ assignFitness()\l+ writeToFile()\l}" alt="" coords="5,358,188,494"/>
+<area shape="rect" id="node3" href="$classGridPopulation.html" title="{GridPopulation\n||+ GridPopulation()\l+ ~GridPopulation()\l+ nextGeneration()\l+ evolve()\l+ getNeighbours()\l+ inNeighbourhood()\l# computeSize()\l# isElite()\l}" alt="" coords="213,336,351,516"/>
+</map>

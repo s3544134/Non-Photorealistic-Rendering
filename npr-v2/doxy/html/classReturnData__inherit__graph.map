@@ -1,0 +1,5 @@
+<map id="ReturnData" name="ReturnData">
+<area shape="rect" id="node2" href="$classReturnFloat.html" title="{ReturnFloat\n|+ TYPENUM\l|+ ReturnFloat()\l+ ~ReturnFloat()\l+ setData()\l+ getData()\l}" alt="" coords="5,175,124,296"/>
+<area shape="rect" id="node3" href="$classReturnFunc.html" title="{ReturnFunc\n|+ TYPENUM\l|+ ReturnFunc()\l+ ~ReturnFunc()\l+ setData()\l+ getData()\l}" alt="" coords="148,175,267,296"/>
+<area shape="rect" id="node4" href="$classReturnRoot.html" title="{ReturnRoot\n|+ TYPENUM\l|+ ReturnRoot()\l+ ~ReturnRoot()\l+ setData()\l+ getData()\l}" alt="" coords="290,175,407,296"/>
+</map>

@@ -1,0 +1,219 @@
+\hypertarget{classCanvas}{}\section{Canvas Class Reference}
+\label{classCanvas}\index{Canvas@{Canvas}}
+
+
+Inheritance diagram for Canvas\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCanvas__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Canvas\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classCanvas__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classCanvas_a53b246273af5f8312e98963ebc5f18c8}{}\label{classCanvas_a53b246273af5f8312e98963ebc5f18c8} 
+{\bfseries Canvas} (\hyperlink{classTarget}{Target} $\ast$t, color\+\_\+t bg, \hyperlink{classBestCanvas}{Best\+Canvas} $\ast$bc)
+\item 
+\hypertarget{classCanvas_ae3d42b2fc30548f6c6bf7d269067e9c7}{}\label{classCanvas_ae3d42b2fc30548f6c6bf7d269067e9c7} 
+{\bfseries Canvas} (\hyperlink{classTarget}{Target} $\ast$t, color\+\_\+t bg\+\_\+\+Red, color\+\_\+t bg\+\_\+\+Green, color\+\_\+t bg\+\_\+\+Blue, \hyperlink{classBestCanvas}{Best\+Canvas} $\ast$bc)
+\item 
+virtual \hyperlink{classCanvas_a237c4549ad2e27c729cd1f71e89f0fd9}{$\sim$\+Canvas} ()
+\item 
+\hypertarget{classCanvas_aa6fd94baa21ffded183b4bf2375d9516}{}\label{classCanvas_aa6fd94baa21ffded183b4bf2375d9516} 
+void {\bfseries set\+R\+G\+B\+Data} (int offset, \hyperlink{structRGB}{R\+GB} pixel)
+\item 
+\hypertarget{classCanvas_a9b47997839f63bda394c7385eac6f96e}{}\label{classCanvas_a9b47997839f63bda394c7385eac6f96e} 
+const int {\bfseries get\+Data\+Offset} (\hyperlink{structCoord}{Coord} c)
+\item 
+\hypertarget{classCanvas_ab1686ad837e67a4c93d7539d0d3d0151}{}\label{classCanvas_ab1686ad837e67a4c93d7539d0d3d0151} 
+\hyperlink{structRGB}{R\+GB} {\bfseries get\+R\+G\+B\+Data} (int offset)
+\item 
+\hypertarget{classCanvas_a9e51f90be565cb3e5d683cdf83d67956}{}\label{classCanvas_a9e51f90be565cb3e5d683cdf83d67956} 
+bool {\bfseries inside\+Canvas} (\hyperlink{structCoord}{Coord})
+\item 
+\hypertarget{classCanvas_ae397083afa0345eec9c0e212903a6394}{}\label{classCanvas_ae397083afa0345eec9c0e212903a6394} 
+\hyperlink{structCoord}{Coord} {\bfseries rotate2D} (\hyperlink{structCoord}{Coord} c, float dx, float dy, float theta)
+\item 
+\hypertarget{classCanvas_abbde1d2cfe76cb174828233e610b62ac}{}\label{classCanvas_abbde1d2cfe76cb174828233e610b62ac} 
+virtual bool {\bfseries save\+Image} (char $\ast$filename)=0
+\item 
+\hypertarget{classCanvas_a20a5bfc766b35f031f87602a33d004b1}{}\label{classCanvas_a20a5bfc766b35f031f87602a33d004b1} 
+bool {\bfseries save\+H\+S\+V\+Image} (char $\ast$filename)
+\item 
+\hypertarget{classCanvas_a0cd8a0f0e6a1b8bae854d93277926951}{}\label{classCanvas_a0cd8a0f0e6a1b8bae854d93277926951} 
+bool {\bfseries save\+R\+G\+B\+Image} (char $\ast$filename)
+\item 
+\hypertarget{classCanvas_abd119da0a1dc1b24a45c8c45bd398732}{}\label{classCanvas_abd119da0a1dc1b24a45c8c45bd398732} 
+virtual void {\bfseries reset\+Canvas} ()=0
+\item 
+\hypertarget{classCanvas_aa5c92419e72221fd67fae506419ec165}{}\label{classCanvas_aa5c92419e72221fd67fae506419ec165} 
+virtual void {\bfseries paint\+Canvas} (vector$<$ float $>$)=0
+\item 
+\hypertarget{classCanvas_a23c0eb700982cfb7e8f468b51aa7adde}{}\label{classCanvas_a23c0eb700982cfb7e8f468b51aa7adde} 
+int {\bfseries get\+Num\+Draw\+Nodes} ()
+\item 
+\hypertarget{classCanvas_a9a96d277519345b76e27349ca8d6421d}{}\label{classCanvas_a9a96d277519345b76e27349ca8d6421d} 
+virtual void {\bfseries compute\+Fitness} ()=0
+\item 
+\hypertarget{classCanvas_a21fb2ed04cb521a5cdb3516bfa7bf6f1}{}\label{classCanvas_a21fb2ed04cb521a5cdb3516bfa7bf6f1} 
+virtual float {\bfseries get\+Fitness} ()=0
+\item 
+\hypertarget{classCanvas_af78dc240a3278b5d7abad1cd743e31c4}{}\label{classCanvas_af78dc240a3278b5d7abad1cd743e31c4} 
+const int {\bfseries get\+Size} ()
+\item 
+\hypertarget{classCanvas_a32c661c9bf432d32b6b75d097cba614f}{}\label{classCanvas_a32c661c9bf432d32b6b75d097cba614f} 
+bool {\bfseries pixel\+Is\+Dirty} (\hyperlink{structCoord}{Coord} c)
+\item 
+\hypertarget{classCanvas_aff7ccbf887a62cfaf2785845d5dabb17}{}\label{classCanvas_aff7ccbf887a62cfaf2785845d5dabb17} 
+bool {\bfseries pixel\+Is\+White} (\hyperlink{structCoord}{Coord} c)
+\item 
+\hypertarget{classCanvas_ac2032301cc13268992ecf3df85b73de0}{}\label{classCanvas_ac2032301cc13268992ecf3df85b73de0} 
+void {\bfseries update\+Best\+Canvas} ()
+\item 
+\hypertarget{classCanvas_a36f33f02cee811e0d5a13e659eeb1f73}{}\label{classCanvas_a36f33f02cee811e0d5a13e659eeb1f73} 
+const int {\bfseries get\+Width} ()
+\item 
+\hypertarget{classCanvas_a0b94a41db3014f125219155940437505}{}\label{classCanvas_a0b94a41db3014f125219155940437505} 
+const int {\bfseries get\+Height} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classCanvas_a6740306cd9f07901b2bc31c2d4bbc3a3}{}\label{classCanvas_a6740306cd9f07901b2bc31c2d4bbc3a3} 
+void {\bfseries reset\+Num\+Draw\+Nodes} ()
+\item 
+\hypertarget{classCanvas_a9381d59bc23a115890fda270eecc69f1}{}\label{classCanvas_a9381d59bc23a115890fda270eecc69f1} 
+void {\bfseries increment\+Lines} ()
+\item 
+\hypertarget{classCanvas_a0227884bab636ac95308b239c99f3466}{}\label{classCanvas_a0227884bab636ac95308b239c99f3466} 
+void {\bfseries set\+Background} (color\+\_\+t bg)
+\item 
+\hypertarget{classCanvas_abf204df96ee5233c09817245942a52f5}{}\label{classCanvas_abf204df96ee5233c09817245942a52f5} 
+void {\bfseries set\+Background\+\_\+\+Red} (color\+\_\+t bg)
+\item 
+\hypertarget{classCanvas_aacbfeb32c1611636b937d9eddc6042f0}{}\label{classCanvas_aacbfeb32c1611636b937d9eddc6042f0} 
+void {\bfseries set\+Background\+\_\+\+Green} (color\+\_\+t bg)
+\item 
+\hypertarget{classCanvas_a447151f796bafcbd3cbbc5191d98aa40}{}\label{classCanvas_a447151f796bafcbd3cbbc5191d98aa40} 
+void {\bfseries set\+Background\+\_\+\+Blue} (color\+\_\+t bg)
+\item 
+\hypertarget{classCanvas_a24ccd2a00993f23addb6b29080a9733a}{}\label{classCanvas_a24ccd2a00993f23addb6b29080a9733a} 
+const color\+\_\+t {\bfseries get\+B\+G\+Color} ()
+\item 
+\hypertarget{classCanvas_a71cfe236e024ae60ac8941cca8f1eb7a}{}\label{classCanvas_a71cfe236e024ae60ac8941cca8f1eb7a} 
+const color\+\_\+t {\bfseries getbg\+Color\+\_\+\+Red} ()
+\item 
+\hypertarget{classCanvas_a8d10f424606d7ac03bdb1197bd23742c}{}\label{classCanvas_a8d10f424606d7ac03bdb1197bd23742c} 
+const color\+\_\+t {\bfseries getbg\+Color\+\_\+\+Green} ()
+\item 
+\hypertarget{classCanvas_a62e8cb7b9c0a99b64adda7ff5330e5a2}{}\label{classCanvas_a62e8cb7b9c0a99b64adda7ff5330e5a2} 
+const color\+\_\+t {\bfseries getbg\+Color\+\_\+\+Blue} ()
+\item 
+\hypertarget{classCanvas_a2b7899e3b8ff4d9938b1b385011ccb25}{}\label{classCanvas_a2b7899e3b8ff4d9938b1b385011ccb25} 
+\hyperlink{classTarget}{Target} $\ast$ {\bfseries get\+Target} ()
+\item 
+\hypertarget{classCanvas_acb06d2e4116994f32121333e69585249}{}\label{classCanvas_acb06d2e4116994f32121333e69585249} 
+\hyperlink{structHSV}{H\+SV} {\bfseries get\+H\+S\+V\+Data} (int offset)
+\item 
+\hypertarget{classCanvas_a7fba7a894a1857c9ee2fe34441629d52}{}\label{classCanvas_a7fba7a894a1857c9ee2fe34441629d52} 
+void {\bfseries set\+H\+S\+V\+Data} (int offset, \hyperlink{structHSV}{H\+SV} pixel)
+\item 
+\hypertarget{classCanvas_a8a7184ebaa6704048362972407787a59}{}\label{classCanvas_a8a7184ebaa6704048362972407787a59} 
+void {\bfseries set\+H\+S\+V\+FitnessH} (float f)
+\item 
+\hypertarget{classCanvas_aa4e1c90061a6814daf5bbca65e1e398a}{}\label{classCanvas_aa4e1c90061a6814daf5bbca65e1e398a} 
+void {\bfseries set\+H\+S\+V\+FitnessS} (float f)
+\item 
+\hypertarget{classCanvas_a068052d242a5c21a89b334224a127d19}{}\label{classCanvas_a068052d242a5c21a89b334224a127d19} 
+void {\bfseries set\+H\+S\+V\+FitnessV} (float f)
+\item 
+\hypertarget{classCanvas_aa0c60ed66fcea208c32a2e3c8bf28923}{}\label{classCanvas_aa0c60ed66fcea208c32a2e3c8bf28923} 
+int {\bfseries degrees\+Of\+Separation} (int, int)
+\item 
+\hypertarget{classCanvas_a56ba128080bcc03c8bb8b7d6c2cc9821}{}\label{classCanvas_a56ba128080bcc03c8bb8b7d6c2cc9821} 
+void {\bfseries print\+Color} (\hyperlink{structRGB}{R\+GB} color)
+\item 
+\hypertarget{classCanvas_a570498c742d3e171b7be1c498f0e75f1}{}\label{classCanvas_a570498c742d3e171b7be1c498f0e75f1} 
+void {\bfseries print\+Color} (\hyperlink{structHSV}{H\+SV} color)
+\item 
+\hypertarget{classCanvas_a95ecf73c2b84c001d12bc6dc6940091e}{}\label{classCanvas_a95ecf73c2b84c001d12bc6dc6940091e} 
+\hyperlink{structRGB}{R\+GB} {\bfseries target\+Pixel\+R\+GB} (\hyperlink{structCoord}{Coord} c)
+\item 
+\hypertarget{classCanvas_a04b66e5e405d8785984a01d7b8dc639c}{}\label{classCanvas_a04b66e5e405d8785984a01d7b8dc639c} 
+\hyperlink{structHSV}{H\+SV} {\bfseries target\+Pixel\+H\+SV} (\hyperlink{structCoord}{Coord} c)
+\item 
+\hypertarget{classCanvas_aa8c5064fd62e3aa1fde2bf94b806281e}{}\label{classCanvas_aa8c5064fd62e3aa1fde2bf94b806281e} 
+int {\bfseries target\+Hue} (\hyperlink{structCoord}{Coord} c)
+\item 
+\hypertarget{classCanvas_aca87eeb2759686e9f9d1f28d9716393a}{}\label{classCanvas_aca87eeb2759686e9f9d1f28d9716393a} 
+int {\bfseries target\+Sat} (\hyperlink{structCoord}{Coord} c)
+\item 
+\hypertarget{classCanvas_a69e2bd44307edae0ac346fefb80be422}{}\label{classCanvas_a69e2bd44307edae0ac346fefb80be422} 
+int {\bfseries target\+Val} (\hyperlink{structCoord}{Coord} c)
+\item 
+\hypertarget{classCanvas_a13059f62106ec98aa56042e053a9d00a}{}\label{classCanvas_a13059f62106ec98aa56042e053a9d00a} 
+int {\bfseries target\+Sat\+Gradient} (\hyperlink{structCoord}{Coord} c)
+\item 
+\hypertarget{classCanvas_a6f9d4ad8953ce2e7294e7ef611dcc7da}{}\label{classCanvas_a6f9d4ad8953ce2e7294e7ef611dcc7da} 
+int {\bfseries target\+Val\+Gradient} (\hyperlink{structCoord}{Coord} c)
+\item 
+\hypertarget{classCanvas_a70268f85eead1127cffba07515ebc777}{}\label{classCanvas_a70268f85eead1127cffba07515ebc777} 
+float {\bfseries target\+Sat\+Direction} (\hyperlink{structCoord}{Coord} c)
+\item 
+\hypertarget{classCanvas_ab8fe4798eaa8d2f630622b0a92664c25}{}\label{classCanvas_ab8fe4798eaa8d2f630622b0a92664c25} 
+float {\bfseries target\+Val\+Direction} (\hyperlink{structCoord}{Coord} c)
+\item 
+\hypertarget{classCanvas_a467ca92f410dfb513f0cb6ab6fddcb9b}{}\label{classCanvas_a467ca92f410dfb513f0cb6ab6fddcb9b} 
+int {\bfseries match\+Hue} (\hyperlink{structCoord}{Coord} c, int h)
+\item 
+\hypertarget{classCanvas_a51a62303ba86699a047c9b82151cc851}{}\label{classCanvas_a51a62303ba86699a047c9b82151cc851} 
+int {\bfseries match\+Sat} (\hyperlink{structCoord}{Coord} c, int s)
+\item 
+\hypertarget{classCanvas_ab6c6ee4bb92793b61b4c99b64e3e4514}{}\label{classCanvas_ab6c6ee4bb92793b61b4c99b64e3e4514} 
+int {\bfseries match\+Val} (\hyperlink{structCoord}{Coord} c, int v)
+\item 
+\hypertarget{classCanvas_a25fc15e87b8526fd411e227bfe94d1ca}{}\label{classCanvas_a25fc15e87b8526fd411e227bfe94d1ca} 
+void {\bfseries compute\+H\+S\+V\+Fitness} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classCanvas_a93c8956f408b11c81073f5d748a8e3b3}{}\label{classCanvas_a93c8956f408b11c81073f5d748a8e3b3} 
+\hyperlink{classBestCanvas}{Best\+Canvas} $\ast$ {\bfseries best\+Canvas}
+\item 
+\hypertarget{classCanvas_aeff1549bc9fb9469f68227dbbee4a4de}{}\label{classCanvas_aeff1549bc9fb9469f68227dbbee4a4de} 
+float {\bfseries hsv\+FitnessH}
+\item 
+\hypertarget{classCanvas_af04ba6d3e079fa937575f7ef80bfac6d}{}\label{classCanvas_af04ba6d3e079fa937575f7ef80bfac6d} 
+float {\bfseries hsv\+FitnessS}
+\item 
+\hypertarget{classCanvas_a16bfdb1b384498d5aa0cbd674c6abfe4}{}\label{classCanvas_a16bfdb1b384498d5aa0cbd674c6abfe4} 
+float {\bfseries hsv\+FitnessV}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCanvas_a237c4549ad2e27c729cd1f71e89f0fd9}{}\label{classCanvas_a237c4549ad2e27c729cd1f71e89f0fd9} 
+\index{Canvas@{Canvas}!````~Canvas@{$\sim$\+Canvas}}
+\index{````~Canvas@{$\sim$\+Canvas}!Canvas@{Canvas}}
+\subsubsection{\texorpdfstring{$\sim$\+Canvas()}{~Canvas()}}
+{\footnotesize\ttfamily Canvas\+::$\sim$\+Canvas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Canvas\+::\+Canvas() \{ \} 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/\+Lach/npr-\/v109/src\+\_\+109/Canvas.\+h\item 
+/home/\+Lach/npr-\/v109/src\+\_\+109/Canvas.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,56 @@
+\hypertarget{classGridPopulation}{}\section{Grid\+Population Class Reference}
+\label{classGridPopulation}\index{Grid\+Population@{Grid\+Population}}
+
+
+Inheritance diagram for Grid\+Population\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=271pt]{classGridPopulation__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Grid\+Population\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGridPopulation__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classGridPopulation_ad3529857b166c6e83969671d7dd1d1c9}{}\label{classGridPopulation_ad3529857b166c6e83969671d7dd1d1c9} 
+{\bfseries Grid\+Population} (int x\+Size, int y\+Size, int dist, char $\ast$log\+File\+Name, \hyperlink{classGPConfig}{G\+P\+Config} $\ast$conf)
+\item 
+\hypertarget{classGridPopulation_a6e70ac22deef76063607ed924606b4be}{}\label{classGridPopulation_a6e70ac22deef76063607ed924606b4be} 
+virtual void {\bfseries next\+Generation} ()
+\item 
+\hypertarget{classGridPopulation_a7d8b0eb0e9a22461322408032fef942f}{}\label{classGridPopulation_a7d8b0eb0e9a22461322408032fef942f} 
+virtual bool {\bfseries evolve} (int num\+Generations)
+\item 
+\hypertarget{classGridPopulation_a5c6dc71b10a17a5f9bb574e86a21b6e5}{}\label{classGridPopulation_a5c6dc71b10a17a5f9bb574e86a21b6e5} 
+virtual int {\bfseries get\+Neighbours} (int individual, int $\ast$numbers, \hyperlink{classGeneticProgram}{Genetic\+Program} $\ast$$\ast$dest)
+\item 
+\hypertarget{classGridPopulation_a3d6361d1c013d88f5e78186c017f8f20}{}\label{classGridPopulation_a3d6361d1c013d88f5e78186c017f8f20} 
+virtual bool {\bfseries in\+Neighbourhood} (Point2D \&point, Point2D \&neighbour)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classGridPopulation_ab787bde0136b7fefc3eeabdf4f416676}{}\label{classGridPopulation_ab787bde0136b7fefc3eeabdf4f416676} 
+virtual int {\bfseries compute\+Size} (int distance)
+\item 
+\hypertarget{classGridPopulation_a2a48584c03e41711526cd0825c6e0169}{}\label{classGridPopulation_a2a48584c03e41711526cd0825c6e0169} 
+virtual bool {\bfseries is\+Elite} (\hyperlink{classGeneticProgram}{Genetic\+Program} $\ast$program, \hyperlink{classGeneticProgram}{Genetic\+Program} $\ast$$\ast$best, int num\+To\+Check)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/\+Lach/npr-\/v109/\+R\+M\+I\+T\+G\+P.\+1.\+5/Grid\+Population.\+h\item 
+/home/\+Lach/npr-\/v109/\+R\+M\+I\+T\+G\+P.\+1.\+5/Grid\+Population.\+cpp\end{DoxyCompactItemize}

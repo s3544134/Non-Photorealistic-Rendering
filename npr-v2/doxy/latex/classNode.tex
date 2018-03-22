@@ -1,0 +1,91 @@
+\hypertarget{classNode}{}\section{Node Class Reference}
+\label{classNode}\index{Node@{Node}}
+
+
+Inheritance diagram for Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classNode__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Node\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classNode__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classNode_ae883e3232f71ca37b0523927bf57a7b6}{}\label{classNode_ae883e3232f71ca37b0523927bf57a7b6} 
+{\bfseries Node} (int type, int num\+Args, string name, \hyperlink{classGPConfig}{G\+P\+Config} $\ast$conf)
+\item 
+\hypertarget{classNode_a8264fbb54d07be499bdc93e785f79351}{}\label{classNode_a8264fbb54d07be499bdc93e785f79351} 
+{\bfseries Node} (\hyperlink{classNode}{Node} \&n)
+\item 
+\hypertarget{classNode_aa03774d17d9f331d7fc65c604bd04bc5}{}\label{classNode_aa03774d17d9f331d7fc65c604bd04bc5} 
+virtual void {\bfseries evaluate} (\hyperlink{classReturnData}{Return\+Data} $\ast$out)=0
+\item 
+\hypertarget{classNode_a3bc9da611ff37236175a80c71e9eb350}{}\label{classNode_a3bc9da611ff37236175a80c71e9eb350} 
+int {\bfseries get\+Return\+Type} () const
+\item 
+\hypertarget{classNode_afe50ea7da284533d08ab1c3965b32620}{}\label{classNode_afe50ea7da284533d08ab1c3965b32620} 
+int {\bfseries get\+Max\+Args} () const
+\item 
+\hypertarget{classNode_a6c55a155ccbbcd8d62fb7300c5354715}{}\label{classNode_a6c55a155ccbbcd8d62fb7300c5354715} 
+void {\bfseries set\+Depth} (const int d)
+\item 
+\hypertarget{classNode_a5cf0aef99d92c05310e12966273a0e7c}{}\label{classNode_a5cf0aef99d92c05310e12966273a0e7c} 
+int {\bfseries get\+Depth} () const
+\item 
+\hypertarget{classNode_a33b290707977cb91f336bd7a40a6bd3a}{}\label{classNode_a33b290707977cb91f336bd7a40a6bd3a} 
+string {\bfseries get\+Name} () const
+\item 
+\hypertarget{classNode_a3cad655320d50751c43c5cec9356dcf3}{}\label{classNode_a3cad655320d50751c43c5cec9356dcf3} 
+\hyperlink{classNode}{Node} $\ast$ {\bfseries get\+Parent} () const
+\item 
+\hypertarget{classNode_a7aa7ebe6ad965b1ed545e8b12d823c1d}{}\label{classNode_a7aa7ebe6ad965b1ed545e8b12d823c1d} 
+\hyperlink{classNode}{Node} $\ast$ {\bfseries get\+Root\+Node} () const
+\item 
+\hypertarget{classNode_ad7c28414b0d242ce7c491e22cf006041}{}\label{classNode_ad7c28414b0d242ce7c491e22cf006041} 
+void {\bfseries set\+Parent} (\hyperlink{classNode}{Node} $\ast$n)
+\item 
+\hypertarget{classNode_a465c78ca0653d656c4b6be729a01e619}{}\label{classNode_a465c78ca0653d656c4b6be729a01e619} 
+virtual int {\bfseries compute\+Size} ()=0
+\item 
+\hypertarget{classNode_a736c8c6ff2675222fffb054c8b5e71cf}{}\label{classNode_a736c8c6ff2675222fffb054c8b5e71cf} 
+virtual int {\bfseries compute\+Depth} (int cur\+Depth)=0
+\item 
+\hypertarget{classNode_ae18241c6519adc9a20d2187a46c0dc6e}{}\label{classNode_ae18241c6519adc9a20d2187a46c0dc6e} 
+virtual void {\bfseries add\+To\+Vector} (vector$<$ \hyperlink{classNode}{Node} $\ast$$>$ \&vec)=0
+\item 
+\hypertarget{classNode_a2c1e22a28cacaf7a1033377574b4ed23}{}\label{classNode_a2c1e22a28cacaf7a1033377574b4ed23} 
+virtual void {\bfseries add\+To\+Vector} (vector$<$ \hyperlink{classNode}{Node} $\ast$$>$ \&vec, int type\+Num)=0
+\item 
+\hypertarget{classNode_a62fe30e16e81b24c73cf93b1577de5c0}{}\label{classNode_a62fe30e16e81b24c73cf93b1577de5c0} 
+virtual void {\bfseries print} (string \&s)=0
+\item 
+\hypertarget{classNode_a3f9b0b2b5678e23f143c9fdaaf3e8c5c}{}\label{classNode_a3f9b0b2b5678e23f143c9fdaaf3e8c5c} 
+virtual \hyperlink{classNode}{Node} $\ast$ {\bfseries copy} ()=0
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classNode_afc05e3b5c6bf0eace3fd8d8df8a15c7c}{}\label{classNode_afc05e3b5c6bf0eace3fd8d8df8a15c7c} 
+int {\bfseries max\+Args}
+\item 
+\hypertarget{classNode_ae0353541456b3dcd4ed5521cbe7215fc}{}\label{classNode_ae0353541456b3dcd4ed5521cbe7215fc} 
+\hyperlink{classGPConfig}{G\+P\+Config} $\ast$ {\bfseries config}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/\+Lach/npr-\/v109/\+R\+M\+I\+T\+G\+P.\+1.\+5/Node.\+h\item 
+/home/\+Lach/npr-\/v109/\+R\+M\+I\+T\+G\+P.\+1.\+5/Node.\+cpp\end{DoxyCompactItemize}

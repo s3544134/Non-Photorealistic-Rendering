@@ -1,0 +1,4 @@
+<map id="Fitness" name="Fitness">
+<area shape="rect" id="node2" href="$classCoEvolutionFitness.html" title="{CoEvolutionFitness\n||+ CoEvolutionFitness()\l+ assignFitness()\l}" alt="" coords="5,321,161,413"/>
+<area shape="rect" id="node3" href="$classImageFitness.html" title="{ImageFitness\n||+ ImageFitness()\l+ initFitness()\l+ assignFitness()\l+ solutionFound()\l+ isBetter()\l+ isWorse()\l+ isEqual()\l+ best()\l+ worst()\l+ outputResults()\l}" alt="" coords="186,263,309,472"/>
+</map>

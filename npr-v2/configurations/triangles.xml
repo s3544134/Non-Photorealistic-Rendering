@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--  Modules: Every field has a list of dependencies that include at least one of these modules.
+RMITGP
+NPR
+PencilSketch
+Stamps
+LineArt
+Triangles
+Pointillism
+-->
+
+<PainterData>
+
+<field key="numGen" type="int" value="100" rule="range" range="1,1000000" dependencies="RMITGP" description="Number of generations to evolve" />
+
+<field key="minTreeSize" type="int" value="2" rule="range" range="1,15" dependencies="RMITGP" description="Tree minimum size" />
+
+<field key="maxTreeSize" type="int" value="3" rule="range" range="2,20" dependencies="RMITGP" description="Tree maximum size (this is only a hint, as RMITGP sometimes breaks this rule)" />
+
+<field key="fitnessTarget" type="double" value="0.005" rule="range" range="1.0E-4,0.9999" dependencies="RMITGP" description="Desired fitness" />
+
+<field key="fitnessRenderThreshold" type="double" value="0.0001" rule="range" range="0.0,1.0" dependencies="RMITGP" description="Fitness render threshold     How much the fitness has to improve before a new output image is generated" />
+
+<field key="popSize" type="int" value="4" rule="range" range="2,100" dependencies="RMITGP" description="Population size" />
+
+<field key="initPop" type="int" value="0" rule="range" range="0,100" dependencies="RMITGP" description="Initial population     If you set it to zero, the program will set it to the popSize you specified" />
+
+<field key="elitism" type="int" value="1" rule="range" range="0,100" dependencies="RMITGP" description="Elitism rate: Elitism rate + mutation rate + crossover rate must equal population size" />
+
+<field key="mutation" type="int" value="1" rule="range" range="0,100" dependencies="RMITGP" description="Mutation rate: Elitism rate + mutation rate + crossover rate must equal population size" />
+
+<field key="crossover" type="int" value="2" rule="range" range="0,100" dependencies="RMITGP" description="Crossover rate: Elitism rate + mutation rate + crossover rate must equal population size" />
+
+<field key="randomSeed" type="int" value="0" rule="range" range="0,1000000" dependencies="RMITGP" description="Random number seed: setting it to zero will mean the program randomly generates it" />
+
+<field key="prog2" type="bool" value="false" rule="boolean" dependencies="RMITGP" description="Use function Prog 2?" />
+
+<field key="prog3" type="bool" value="true" rule="boolean" dependencies="RMITGP" description="Use function Prog 3?" />
+
+<field key="prog4" type="bool" value="true" rule="boolean" dependencies="RMITGP" description="Use function Prog 4?" />
+
+<field key="targetFilename" type="string" value="arch" rule="file" fileDescription="PNG Files" fileExtension="*.png" folder="input" dependencies="RMITGP" description="Target image" />
+
+<field key="drawMode" type="int" value="3" rule="choices" choices="0: Pencil Sketch,1: Stamps,2: Line Art,3: Triangles,4: Pointillism" dependencies="NPR" description="Drawing mode" />
+
+<field key="usingAdaptiveCanvas" type="bool" value="true" rule="boolean" dependencies="NPR" description="Using Incremental Rendering?" />
+
+<field key="fastShroud" type="bool" value="true" rule="boolean" dependencies="NPR" description="Fast convergence" />
+
+<field key="canvasBG_Red" type="int" value="0" rule="range" range="0,255" dependencies="NPR" description="Canvas background color (Red component)" />
+
+<field key="canvasBG_Green" type="int" value="0" rule="range" range="0,255" dependencies="NPR" description="Canvas background color (Green component)" />
+
+<field key="canvasBG_Blue" type="int" value="255" rule="range" range="0,255" dependencies="NPR" description="Canvas background color (Blue component)" />
+
+<field key="pathToTarget" type="string" value="input" rule="readonly" dependencies="NPR" description="Path to input folder" />
+
+<field key="pathToMask" type="string" value="masks" rule="readonly" dependencies="NPR" description="Path to masks folder" />
+
+<field key="pathToOutput" type="string" value="output" rule="readonly" dependencies="NPR" description="Path to output folder" />
+
+<field key="pathToPalette" type="string" value="palettes" rule="readonly" dependencies="NPR" description="Path to palettes folder" />
+
+<field key="version" type="string" value="1.12" rule="readonly" dependencies="NPR" description="Program version" />
+
+<field key="valCannyHi" type="int" value="40" rule="readonly" dependencies="NPR,LineArt,Stamps,Pointillism" description="valCannyHi -- specialised colour calculation" />
+
+<field key="satCannyHi" type="int" value="60" rule="readonly" dependencies="NPR,LineArt,Stamps,Pointillism" description="satCannyHi -- specialised colour calculation" />
+
+<field key="valCannyLo" type="int" value="10" rule="readonly" dependencies="NPR" description="valCannyLo -- specialised colour calculation" />
+
+<field key="satCannyLo" type="int" value="10" rule="readonly" dependencies="NPR" description="satCannyLo -- specialised colour calculation" />
+
+<field key="fuzzyEdges" type="bool" value="true" rule="readonly" dependencies="NPR" description="Use fuzzy edges? -- specialised colour calculation" />
+
+<field key="usingMPI" type="bool" value="false" rule="boolean" dependencies="NPR" description="Using MPI" />
+
+<field key="mpiDebugging" type="bool" value="false" rule="boolean" dependencies="NPR" description="MPI debugging - If true, MPI message passing routines are printed to stdout" />
+
+<field key="colourMode" type="bool" value="true" rule="boolean" dependencies="PencilSketch" description="Draw in colour (or grayscale)? True for colour" />
+
+<field key="pixelReplacement" type="int" value="0" rule="choices" choices="0: Blend,1: NoPixel,2: NoStroke,3: StopStroke" dependencies="PencilSketch,Triangles" description="Pixel replacement -- what to do if writing a pixel that has already been drawn.     0: Blend the colours  1: Don't draw the new pixel  2: Don't draw the entire stroke     3: Stop drawing the stroke (If any pixel is encountered that has already been drawn, stop drawing)." />
+
+<field key="lineArtColorMode" type="int" value="0" rule="choices" choices="0: Black,1: BlackWhite,2: BlackRed,3: BlackWhiteRed" dependencies="LineArt" description="Line art colour mode     0: Black strokes on a white canvas     1: Black AND white strokes on a white canvas     2: Black and red strokes on a white canvas     3: Black, red AND white strokes on a white canvas" />
+
+<field key="lineArtThickness" type="int" value="1" rule="choices" choices="0: Marker,1: Pen" dependencies="LineArt" description="Line art thickness     0: Marker (3 pixel width)     1: Pen (1 pixel width)" />
+
+<field key="customDecal" type="string" value="brush" rule="file" fileDescription="PNG Files" fileExtension="*.png" folder="decals" dependencies="Stamps" description="Stamps file" />
+
+<field key="paletteFile" type="string" value="Target" rule="file" fileDescription="NPR Hex Files" fileExtension="*.hex" folder="palettes" dependencies="Stamps,Pointillism" description="Palette file. If you wish to use the colours in the target image as the palette, choose Target.hex in the palettes folder." />
+
+<field key="typeTriangle" type="int" value="2" rule="choices" choices="0: Empty,1: SwissCheese,2: Filled" dependencies="Triangles" description="Type of triangle:     0: Empty     1: Swiss Cheese     2: Filled" />
+
+<field key="firstLineLength" type="int" value="50" rule="range" range="1,100" dependencies="Triangles" description="Line length to use (for rendering line just it uses the firstLineLength parameter, not secondLineLength!!) At the Triangle mode is better to use the length of lines less than 100 for Swiss chess and Empty Triangle, otherwise it took ages to render (even you set as 0 at Triangle Mode, again does not give you a quick rendering, because the lines of triangle must be inside of the canvas.) For Fill triangle does not have this problem so you can provide line length as 0 or even very larg one." />
+
+<field key="secondLineLength" type="int" value="40" rule="range" range="1,100" dependencies="Triangles" description="Triangles: second line length" />
+
+<field key="colourUpdater" type="int" value="1" rule="range" range="0,1" dependencies="Triangles" description="Colour update method (Used by Triangles if Fastshroud is turned on)     0: best channel     1: whole pixels" />
+
+</PainterData>
+
+<!-- NPR ConfigReader data follows
+numGen int 100
+minTreeSize int 2
+maxTreeSize int 3
+fitnessTarget double 0.005
+fitnessRenderThreshold double 0.0001
+popSize int 4
+initPop int 0
+elitism int 1
+mutation int 1
+crossover int 2
+randomSeed int 0
+prog2 bool false
+prog3 bool true
+prog4 bool true
+targetFilename string arch
+drawMode int 3
+usingAdaptiveCanvas bool true
+fastShroud bool true
+canvasBG_Red int 0
+canvasBG_Green int 0
+canvasBG_Blue int 255
+pathToTarget string input
+pathToMask string masks
+pathToOutput string output
+pathToPalette string palettes
+version string 1.12
+valCannyHi int 40
+satCannyHi int 60
+valCannyLo int 10
+satCannyLo int 10
+fuzzyEdges bool true
+usingMPI bool false
+mpiDebugging bool false
+colourMode bool true
+pixelReplacement int 0
+lineArtColorMode int 0
+lineArtThickness int 1
+customDecal string brush
+paletteFile string Target
+typeTriangle int 2
+firstLineLength int 50
+secondLineLength int 40
+colourUpdater int 1
+-->

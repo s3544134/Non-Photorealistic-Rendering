@@ -1,0 +1,190 @@
+\hypertarget{classPopulation}{}\section{Population Class Reference}
+\label{classPopulation}\index{Population@{Population}}
+
+
+Inheritance diagram for Population\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{classPopulation__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Population\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classPopulation__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classPopulation_a8ddb40058bdb88365e0cebe9ca92ddec}{}\label{classPopulation_a8ddb40058bdb88365e0cebe9ca92ddec} 
+{\bfseries Population} (int size, char $\ast$log\+File\+Name, \hyperlink{classGPConfig}{G\+P\+Config} $\ast$conf)
+\item 
+\hypertarget{classPopulation_aa1d072ac78ec85f51655a037bb8a7398}{}\label{classPopulation_aa1d072ac78ec85f51655a037bb8a7398} 
+{\bfseries Population} (int size, int init\+Size, char $\ast$log\+File\+Name, \hyperlink{classGPConfig}{G\+P\+Config} $\ast$conf)
+\item 
+\hypertarget{classPopulation_ad3ff445634fd12511f52cc132526e7a9}{}\label{classPopulation_ad3ff445634fd12511f52cc132526e7a9} 
+{\bfseries Population} (\hyperlink{classPopulation}{Population} \&p)
+\item 
+\hypertarget{classPopulation_a29a9459c191db37b5c83f7e59fb95191}{}\label{classPopulation_a29a9459c191db37b5c83f7e59fb95191} 
+int {\bfseries get\+Num\+Generation\+Before\+Decimation} () const
+\item 
+\hypertarget{classPopulation_a45937bd5e6f7c798b3b4799827073e59}{}\label{classPopulation_a45937bd5e6f7c798b3b4799827073e59} 
+void {\bfseries set\+Num\+Generation\+Before\+Decimation} (int num)
+\item 
+\hypertarget{classPopulation_a6b8cee653f903490310744b3eaf68599}{}\label{classPopulation_a6b8cee653f903490310744b3eaf68599} 
+\hyperlink{classGeneticProgram}{Genetic\+Program} $\ast$ {\bfseries get\+Individual} (int individual)
+\item 
+\hypertarget{classPopulation_a3026360d53e420e29b6e92c9dce423df}{}\label{classPopulation_a3026360d53e420e29b6e92c9dce423df} 
+int {\bfseries get\+Generation\+Number} () const
+\item 
+\hypertarget{classPopulation_a5b30c3f60f1aa578884850c4b3d7db97}{}\label{classPopulation_a5b30c3f60f1aa578884850c4b3d7db97} 
+void {\bfseries set\+Generation\+Number} (int num)
+\item 
+\hypertarget{classPopulation_afab7c52ec951860d6d9a2daff217f790}{}\label{classPopulation_afab7c52ec951860d6d9a2daff217f790} 
+void {\bfseries set\+Depth\+Limit} (int d)
+\item 
+\hypertarget{classPopulation_ae21576ee423094b5bd448de6142ad57e}{}\label{classPopulation_ae21576ee423094b5bd448de6142ad57e} 
+void {\bfseries set\+Min\+Depth} (int d)
+\item 
+\hypertarget{classPopulation_aed5e025f21c935e1fd900ba60caf28fd}{}\label{classPopulation_aed5e025f21c935e1fd900ba60caf28fd} 
+virtual void {\bfseries generate\+Initial\+Population} ()
+\item 
+\hypertarget{classPopulation_a09e29f6bbc36972a23b1985e7abacb6b}{}\label{classPopulation_a09e29f6bbc36972a23b1985e7abacb6b} 
+virtual void {\bfseries correct\+Rates} ()
+\item 
+\hypertarget{classPopulation_ac033205445ee827a57744ae80da1d4d2}{}\label{classPopulation_ac033205445ee827a57744ae80da1d4d2} 
+virtual void {\bfseries assign\+Fitness} ()
+\item 
+\hypertarget{classPopulation_a3374ac11fc34856b132aa8abf2921ccd}{}\label{classPopulation_a3374ac11fc34856b132aa8abf2921ccd} 
+virtual void {\bfseries sort\+Population} ()
+\item 
+\hypertarget{classPopulation_a3c815f0afee70391b28eaacdfa84bed8}{}\label{classPopulation_a3c815f0afee70391b28eaacdfa84bed8} 
+virtual bool {\bfseries evolve} (int num\+Generations)
+\item 
+\hypertarget{classPopulation_a3f677a82324b735a7ed093ec294ceae3}{}\label{classPopulation_a3f677a82324b735a7ed093ec294ceae3} 
+virtual void {\bfseries next\+Generation} ()
+\item 
+\hypertarget{classPopulation_aa0975317ce7392a4d917b2b7517f28a3}{}\label{classPopulation_aa0975317ce7392a4d917b2b7517f28a3} 
+virtual void {\bfseries adjust\+Fitness} ()
+\item 
+\hypertarget{classPopulation_ae05ed5246e8aeb4872827c8a816f3aab}{}\label{classPopulation_ae05ed5246e8aeb4872827c8a816f3aab} 
+virtual void {\bfseries set\+Num\+Individuals} (int num)
+\item 
+\hypertarget{classPopulation_a662f89fbdae1840adf82d85786c38c10}{}\label{classPopulation_a662f89fbdae1840adf82d85786c38c10} 
+int {\bfseries get\+Num\+Individuals} () const
+\item 
+\hypertarget{classPopulation_a4d42799a0bc164dcd442aa49a56fb172}{}\label{classPopulation_a4d42799a0bc164dcd442aa49a56fb172} 
+void {\bfseries set\+Return\+Type} (int type)
+\item 
+\hypertarget{classPopulation_a1efef7276f278c8048de7206385691ec}{}\label{classPopulation_a1efef7276f278c8048de7206385691ec} 
+int {\bfseries get\+Return\+Type} () const
+\item 
+\hypertarget{classPopulation_a8a9230fc234ceea29c31f2c00d9c19fe}{}\label{classPopulation_a8a9230fc234ceea29c31f2c00d9c19fe} 
+void {\bfseries set\+Mutation\+Rate} (double rate)
+\item 
+\hypertarget{classPopulation_a4150690f958860d57096f5e5b4cfad28}{}\label{classPopulation_a4150690f958860d57096f5e5b4cfad28} 
+double {\bfseries get\+Mutation\+Rate} ()
+\item 
+\hypertarget{classPopulation_a4209f68b66babc7452c9bce1664e5008}{}\label{classPopulation_a4209f68b66babc7452c9bce1664e5008} 
+void {\bfseries set\+Num\+For\+Mutation} (int num)
+\item 
+\hypertarget{classPopulation_aedc7c53400e796b263bfc969d7850bc2}{}\label{classPopulation_aedc7c53400e796b263bfc969d7850bc2} 
+int {\bfseries get\+Num\+For\+Mutation} ()
+\item 
+\hypertarget{classPopulation_a65a0cde08a3ecd0bb870d9db020dd7db}{}\label{classPopulation_a65a0cde08a3ecd0bb870d9db020dd7db} 
+void {\bfseries set\+Crossover\+Rate} (double rate)
+\item 
+\hypertarget{classPopulation_a916556fdef7a25b1f063113343bb43ce}{}\label{classPopulation_a916556fdef7a25b1f063113343bb43ce} 
+double {\bfseries get\+Crossover\+Rate} ()
+\item 
+\hypertarget{classPopulation_a7462bd779f966610604f29dd5bda0d03}{}\label{classPopulation_a7462bd779f966610604f29dd5bda0d03} 
+void {\bfseries set\+Num\+For\+Crossover} (int num)
+\item 
+\hypertarget{classPopulation_a50d13a63bf6a5e6a627eacc24c81dadf}{}\label{classPopulation_a50d13a63bf6a5e6a627eacc24c81dadf} 
+int {\bfseries get\+Num\+For\+Crossover} ()
+\item 
+\hypertarget{classPopulation_a0f40fb943b84b4fa244c604a694c801b}{}\label{classPopulation_a0f40fb943b84b4fa244c604a694c801b} 
+void {\bfseries set\+Elitism\+Rate} (double rate)
+\item 
+\hypertarget{classPopulation_a08263afa57c291dc6dfccfe738ed16da}{}\label{classPopulation_a08263afa57c291dc6dfccfe738ed16da} 
+double {\bfseries get\+Elitism\+Rate} ()
+\item 
+\hypertarget{classPopulation_ae65a41d6de20fa249577863cc767c4d5}{}\label{classPopulation_ae65a41d6de20fa249577863cc767c4d5} 
+void {\bfseries set\+Num\+For\+Elitism} (int num)
+\item 
+\hypertarget{classPopulation_a20f6a695d326d83632db082fffd44d98}{}\label{classPopulation_a20f6a695d326d83632db082fffd44d98} 
+int {\bfseries get\+Num\+For\+Elitism} ()
+\item 
+\hypertarget{classPopulation_ac92c7182e5123b0d726105e1442521d8}{}\label{classPopulation_ac92c7182e5123b0d726105e1442521d8} 
+virtual \hyperlink{classGeneticProgram}{Genetic\+Program} $\ast$ {\bfseries get\+Best} ()
+\item 
+\hypertarget{classPopulation_af5ac94068bc2aa35b73c57d52f9e1867}{}\label{classPopulation_af5ac94068bc2aa35b73c57d52f9e1867} 
+virtual \hyperlink{classGeneticProgram}{Genetic\+Program} $\ast$ {\bfseries get\+Worst} ()
+\item 
+\hypertarget{classPopulation_a93466941f5e075ab658295bf50c06eff}{}\label{classPopulation_a93466941f5e075ab658295bf50c06eff} 
+void {\bfseries set\+Log\+Frequency} (int freq)
+\item 
+\hypertarget{classPopulation_ac7b41790d3a87aff85d6d25451b829bc}{}\label{classPopulation_ac7b41790d3a87aff85d6d25451b829bc} 
+int {\bfseries get\+Log\+Frequency} () const
+\item 
+\hypertarget{classPopulation_a3485142204a414f2630eaaf2341efc61}{}\label{classPopulation_a3485142204a414f2630eaaf2341efc61} 
+void {\bfseries compress\+Generation\+Files} (bool value)
+\item 
+\hypertarget{classPopulation_a3e7ceab5e911b2a30308df34e5f8cf6d}{}\label{classPopulation_a3e7ceab5e911b2a30308df34e5f8cf6d} 
+bool {\bfseries get\+Compress\+Files} () const
+\item 
+\hypertarget{classPopulation_a368a1add601bc972b7609ec25907ca4a}{}\label{classPopulation_a368a1add601bc972b7609ec25907ca4a} 
+virtual void {\bfseries write\+To\+File} ()
+\item 
+\hypertarget{classPopulation_a9beb1df411e9adf8498110f5442f9884}{}\label{classPopulation_a9beb1df411e9adf8498110f5442f9884} 
+virtual void {\bfseries compute\+Statistics} ()
+\item 
+\hypertarget{classPopulation_ad5ac00644614fa50b92f6c88ee0fc236}{}\label{classPopulation_ad5ac00644614fa50b92f6c88ee0fc236} 
+virtual void {\bfseries read\+From\+File} (char $\ast$file\+Name)
+\item 
+\hypertarget{classPopulation_a886082aaf6dfee2fd7b4a3160b5d3bd0}{}\label{classPopulation_a886082aaf6dfee2fd7b4a3160b5d3bd0} 
+void {\bfseries q\+Sort} (\hyperlink{classGeneticProgram}{Genetic\+Program} $\ast$$\ast$individuals, int left, int right)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classPopulation_a053c12ad09287ddc2db5b17b3bab573d}{}\label{classPopulation_a053c12ad09287ddc2db5b17b3bab573d} 
+\hyperlink{classGeneticProgram}{Genetic\+Program} $\ast$$\ast$ {\bfseries get\+Population} () const
+\item 
+\hypertarget{classPopulation_a5cebfb8e94eca66d4ec1acf6fb1ade8a}{}\label{classPopulation_a5cebfb8e94eca66d4ec1acf6fb1ade8a} 
+void {\bfseries set\+Population} (\hyperlink{classGeneticProgram}{Genetic\+Program} $\ast$$\ast$new\+Pop, int size)
+\item 
+\hypertarget{classPopulation_a0584ecff1fbe2f0fd4bf80bbd2d4b18b}{}\label{classPopulation_a0584ecff1fbe2f0fd4bf80bbd2d4b18b} 
+virtual void {\bfseries write\+Log} ()
+\item 
+\hypertarget{classPopulation_a29192a0c94ecf56c8e3ff0b5d91b9e32}{}\label{classPopulation_a29192a0c94ecf56c8e3ff0b5d91b9e32} 
+virtual void {\bfseries compress\+File} (char $\ast$file\+Name)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classPopulation_ac7ed1aad54d43b5ceabccb373124e51a}{}\label{classPopulation_ac7ed1aad54d43b5ceabccb373124e51a} 
+\hyperlink{classGPConfig}{G\+P\+Config} $\ast$ {\bfseries config}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classPopulation_ae3843f6ac1dc6e9943514e7f90203551}{}\label{classPopulation_ae3843f6ac1dc6e9943514e7f90203551} 
+ostream \& {\bfseries operator$<$$<$} (ostream \&o, \hyperlink{classPopulation}{Population} \&p)
+\item 
+\hypertarget{classPopulation_a40a83a22188f62bff8f72b3d0876ebb8}{}\label{classPopulation_a40a83a22188f62bff8f72b3d0876ebb8} 
+istream \& {\bfseries operator$>$$>$} (istream \&i, \hyperlink{classPopulation}{Population} \&p)
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/\+Lach/npr-\/v109/\+R\+M\+I\+T\+G\+P.\+1.\+5/Population.\+h\item 
+/home/\+Lach/npr-\/v109/\+R\+M\+I\+T\+G\+P.\+1.\+5/Population.\+cpp\end{DoxyCompactItemize}

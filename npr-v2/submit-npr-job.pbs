@@ -1,0 +1,21 @@
+#!/bin/bash
+# Usage: qsub pbs-script
+
+#PBS -S /bin/bash
+#PBS -N NPR-V2
+#PBS -P sa1 
+#PBS -q normal 
+#PBS -l walltime=20:00:00,mem=300MB 
+#XXXXPBS -l wd
+#PBS -l ncpus=4
+#PBS -l walltime=48:00:00
+#PBS -k oe
+
+cd $PBS_O_WORKDIR
+
+umask 0033
+#module load openmpi/1.6.3-gcc
+#module load mpiexec
+
+#mpiexec ./runme.sh
+./runme.sh
